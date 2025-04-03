@@ -1,0 +1,55 @@
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav div img{
+    width: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+nav ul li a:hover{
+    color: blue;
+    border-bottom: 1px solid black;
+}
+
+.card-container {
+    display: flex;                /* Menggunakan flexbox untuk layout */
+    flex-wrap: wrap;              /* Agar card bisa pindah baris jika layar kecil */
+    justify-content: space-evenly; /* Menyebar card agar ada jarak merata antara card */
+    gap: 20px;                    /* Menambahkan jarak antar card */
+    padding: 20px;                /* Memberikan padding di sekeliling container */
+}
+
+.card {
+    flex: 0 1 18rem;              /* Card memiliki ukuran tetap (18rem) dan tidak akan melar lebih besar */
+    box-sizing: border-box;       /* Agar padding dan margin tidak mengubah ukuran card */
+}
