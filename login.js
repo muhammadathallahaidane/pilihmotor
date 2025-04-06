@@ -1,2 +1,13 @@
-document.getElementByType("submit").innerHTML = window.location.href
-// console.log(window.location);
+//Login; verification//
+function verification() {
+  let userName = document.getElementById("inputUsername").value;
+  let password = document.getElementById("inputPassword").value;
+  let setUname = "Example"
+  let setPass = "admin123"
+  if (userName === setUname) {
+    if(password === setPass) {
+      window.open("main-page.html")
+    } 
+    else{alert("Incorrect Password")}}
+  else{alert("Incorrect Username")}
+};
