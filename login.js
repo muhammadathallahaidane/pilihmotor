@@ -7,6 +7,7 @@ function verification() {
   if (userName === setUname) {
     if(password === setPass) {
       window.open("main-page.html")
+      alert("Login Success")
     } 
     else{alert("Incorrect Password")}}
   else{alert("Incorrect Username")}
