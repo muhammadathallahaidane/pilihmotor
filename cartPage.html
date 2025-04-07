@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>pilihMotor Cart Page</title>
+</head>
+<body>
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#"><img style="width: 50px;" src="pilihMotor logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Navbar text with an inline element
+              </span>
+            </div>
+          </nav>
+    </head>
+    <section>
+        <h1>Your Cart</h1>
+        <div>
+            <h4>Hello Username!</h4>
+        </div>
+        <div>
+            <p>Please review your cart below</p>
+            <!-- Input dari productPage -->
+             <p>Total Harga</p>
+             <p>Rp 100.000</p>
+        </div>
+        <div>
+            <p>Choose how to get your motor!</p>
+            <select name="delivery" id="">
+                <option value="dealer">Meet us at our dealer</option>
+                <!-- Kalo pilih ini munculkan alamat pilihMotor -->
+                <option value="home">Send to my home</option>
+                <!-- kalo pilih ini munculkan box input isi address -->
+            </select>
+            <!-- kalo pilih cod -->
+             <h4>Visit Us At:</h4>
+             <p>Jl. Sultan Iskandar Muda No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240</p>
+            <!-- kalo pilih delivery -->
+            <p>Please input your address</p>
+            <input type="text" placeholder="input your address here">
+        </div>
+        <div>
+            <p>Choose your payment method</p>
+            <select name="payment" id="">
+                <option value="cod">Cash on Delivery</option>
+                <option value="bca">BCA Bank Transfer</option>
+                <option value="mandiri">Mandiri Bank Transfer</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
