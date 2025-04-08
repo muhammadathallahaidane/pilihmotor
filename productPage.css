@@ -53,3 +53,4 @@ nav ul li a:hover{
     flex: 0 1 18rem;              /* Card memiliki ukuran tetap (18rem) dan tidak akan melar lebih besar */
     box-sizing: border-box;       /* Agar padding dan margin tidak mengubah ukuran card */
 }
+

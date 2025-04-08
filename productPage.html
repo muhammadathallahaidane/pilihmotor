@@ -7,69 +7,138 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="productPage.css">
+    <link rel="stylesheet" href="ProductPage.css">
 </head>
 
 <body>
     <!-- navbar start -->
     <nav>
         <div>
-            <img src="gambar/Logo Jaya Motor.jpg" alt="logo jaya motor">
+            <img src="gambar/logo.png" alt="logo jaya motor">
         </div>
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Beli</a>
-            </li>
-            <li>
-                <a href="#">Cart</a>
-            </li>
-            <li>
-                <a href="#">Login</a>
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Beli</a></li>
+            <li><a href="#">Username</a></li>
         </ul>
     </nav>
     <!-- navbar end -->
 
     <br>
 
-    <!-- card start -->
-    <div class="card-container">
-        <div class="card" style="width: 18rem;">
-            <img src="gambar/motor harley.jpg" class="card-img-top" alt="motor harley">
-            <div class="card-body">
-                <h5 class="card-title">Harley Davidson</h5>
-                <p class="card-text">Motor Harley tipe tiger MKII dengan tarikan ganas</p>
-                <a href="#" class="btn btn-primary">add to cart</a>
-            </div>
+    <!-- Category Bar start -->
+    <div class="container mb-4">
+        <div class="btn-group" role="group">
+            <button class="btn btn-secondary" onclick="filterCategory('all')">Show All</button>
+            <button class="btn btn-secondary" onclick="filterCategory('honda')">Honda</button>
+            <button class="btn btn-secondary" onclick="filterCategory('yamaha')">Yamaha</button>
+            <button class="btn btn-secondary" onclick="filterCategory('suzuki')">Suzuki</button>
+            <button class="btn btn-secondary" onclick="filterCategory('kawasaki')">Kawasaki</button>
         </div>
-    
-        <div class="card" style="width: 18rem;">
-            <img src="gambar/2018ninja250_abs-02.jpg" class="card-img-top" alt="ninja abs">
-            <div class="card-body">
-                <h5 class="card-title">Ninja ABS 02</h5>
-                <p class="card-text">Motor ninja dengan tipe tercepat yang pernah dibuat oleh kawasaki</p>
-                <a href="#" class="btn btn-primary">add to cart</a>
-            </div>
-        </div>
-    
-        <div class="card" style="width: 18rem;">
-            <img src="gambar/Ducati-Panigale-V4-R.jpg" class="card-img-top" alt="ducati panigale">
-            <div class="card-body">
-                <h5 class="card-title">Ducati Panigale</h5>
-                <p class="card-text">Ducati panigale keluaran terbaik dengan mesin V12 yang dapat mencapai kecepatan 100/km dalam 3 detik</p>
-                <a href="#" class="btn btn-primary">add to cart</a>
-            </div>
-        </div>
+    </div>
+    <!-- Category Bar end -->
 
-        <div class="card" style="width: 18rem;">
-            <img src="gambar/vespa pts.jpg" class="card-img-top" alt="motor vespa">
-            <div class="card-body">
-                <h5 class="card-title">Vespa PTS</h5>
-                <p class="card-text">Vespa classic terbaik yang dapat anda dapatkan</p>
-                <a href="#" class="btn btn-primary">add to cart</a>
+    <!-- card start -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <!-- Honda Cards -->
+            <div class="col honda">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/honda-beat.jpg" class="card-img-top" alt="honda beat">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Beat 2024</h5>
+                        <h5>Rp 17.000.000</h6>
+                        <p class="card-text">Honda Beat bekas tahun 2024 kondisi masih prima dengan kilometer 15.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col honda">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/supra x.jpg" class="card-img-top" alt="supra x">
+                    <div class="card-body">
+                        <h5 class="card-title">Supra X 125</h5>
+                        <h5>Rp 18.000.000</h6>
+                        <p class="card-text">Supra X motor Honda keluaran 2024 dengan transmisi manual kondisi mulus kilometer 10.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Yamaha Cards -->
+            <div class="col yamaha">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/mio gear merah.jpg.png" class="card-img-top" alt="mio gear">
+                    <div class="card-body">
+                        <h5 class="card-title">Mio Gear</h5>
+                        <h5>Rp 19.000.000</h6>
+                        <p class="card-text">Motor Yamaha keluaran 2023 dengan kilometer 30.000 kondisi mulus seperti baru</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col yamaha">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/jupiter mx 150.jpg" class="card-img-top" alt="jupiter 150">
+                    <div class="card-body">
+                        <h5 class="card-title">Jupiter 150</h5>
+                        <h5>Rp 16.500.000</h6>
+                        <p class="card-text">Motor produksi Yamaha dengan transmisi manual keluarah 2023 kilometer rendah di angka 20.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suzuki Cards -->
+            <div class="col suzuki">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/suzuki Nex Kuning.jpg" class="card-img-top" alt="suzuki nex">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki Nex</h5>
+                        <h5>Rp 15.000.000</h6>
+                        <p class="card-text">Motor keluaran suzuki terbaru memiliki tingkat efisien yang tinggi dengan kilometer 10.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col suzuki">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/suzuki smash biru.jpg" class="card-img-top" alt="suzuki smash">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki Smash</h5>
+                        <h5>Rp 17.800.000</h6>
+                        <p class="card-text">Motor transmisi manual keluaran Suzuki terbaru tahun 2023 kilometer 25.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kawasaki Cards -->
+            <div class="col kawasaki">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/2016_Kawasaki_ZX10-R.jpg" class="card-img-top" alt="Kawasaki ZX10 - R">
+                    <div class="card-body">
+                        <h5 class="card-title">Kawasaki ZX10 - R</h5>
+                        <h5>Rp 261.000.000</h6>
+                        <p class="card-text">Motor Ninja buatan kawasaki tahun 2016 kilometer 100.000 mulus terawat</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col kawasaki">
+                <div class="card" style="width: 18rem;">
+                    <img src="gambar/kawasaki 125.jpg" class="card-img-top" alt="Kawasaki 125">
+                    <div class="card-body">
+                        <h5 class="card-title">Kawasaki 125</h5>
+                        <h5>Rp 21.000.000</h6>
+                        <p class="card-text">Motor terobosan baru kawasaki dengan transmisi matic tahun 2025 kilometer 5.000</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -78,6 +147,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="ProductPage.js"></script>
 </body>
 
 </html>
+
+
+
+
