@@ -33,52 +33,54 @@
           </li>
         </ul>
         <span class="navbar-text">
-          Navbar text with an inline element
         </span>
       </div>
     </nav>
   </head>
   <section>
-    <h1>Your Cart</h1>
-    <div>
-      <h4>Hello Username!</h4>
-    </div>
-    <div>
-      <p>Please review your cart below</p>
-      <!-- Input dari productPage -->
-      <p>Total Harga</p>
-      <p>Rp 100.000</p>
-    </div>
-    <div>
-      <p>Choose how to get your motor!</p>
-      <select name="delivery" id="delivery" onchange="pilihDelivery(pilihan)">
-        <option value="">Select Here!</option>
-        <!-- Kalo pilih ini munculkan alamat pilihMotor -->
-        <option value="dealer">Meet us at our dealer</option>
-        <!-- kalo pilih ini munculkan box input isi address -->
-        <option value="home">Send to my home</option>
-      </select>
-      <!-- kalo pilih cod -->
-      <div id="dealer" class="displayNone">
-        <h4>Visit Us At:</h4>
-        <p>Jl. Sultan Iskandar Muda No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus
-          Ibukota Jakarta 12240</p>
+      <div class="judul">
+        <h4>Hello Username!</h4>
       </div>
-      <!-- kalo pilih delivery -->
-      <div id="home" class="displayNone">
-        <p>Please input your address</p>
-        <input type="text" placeholder="input your address here">
+    <div class="row">
+      <div class="col-3 border border-primary rounded" id="cartCard">
+        <p>Please review your cart below</p>
+        <!-- Input dari productPage -->
+        <p>Total Harga</p>
+        <p>Rp 100.000</p>
+      </div>
+      <div class="col-6 border border-primary rounded" id="deliveryCard">
+        <p>Choose how to get your motor!</p>
+        <select name="delivery" id="delivery" onchange="pilihDelivery(this.value)">
+          <option value="">Select Here!</option>
+          <!-- Kalo pilih ini munculkan alamat pilihMotor -->
+          <option value="dealer">Meet us at our dealer</option>
+          <!-- kalo pilih ini munculkan box input isi address -->
+          <option value="home">Send to my home</option>
+        </select>
+        <!-- kalo pilih cod -->
+        <div id="dealer" class="displayNone mb-3">
+          <h4 style="margin-top: 30px;">Visit Us At:</h4>
+          <h6>pilihMotor Dealer</h6>
+          <p>Jl. Sultan Iskandar Muda No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah
+            Khusus
+            Ibukota Jakarta 12240</p>
+        </div>
+        <!-- kalo pilih delivery -->
+        <div id="home" class="displayNone">
+          <p>Please input your address</p>
+          <input class="alamat" type="text" placeholder="input your address here">
+        </div>
+      </div>
+      <div class="col border border-primary rounded" id="paymentCard">
+        <p>Choose your payment method</p>
+        <select name="payment" id="">
+          <option value="cod">Cash on Delivery</option>
+          <option value="bca">BCA Bank Transfer</option>
+          <option value="mandiri">Mandiri Bank Transfer</option>
+        </select>
       </div>
     </div>
-    <div>
-      <p>Choose your payment method</p>
-      <select name="payment" id="">
-        <option value="cod">Cash on Delivery</option>
-        <option value="bca">BCA Bank Transfer</option>
-        <option value="mandiri">Mandiri Bank Transfer</option>
-      </select>
-    </div>
-    <div>
+    <div class="rounded">
       <button type="button" class="btn btn-primary btn-lg btn-block active">Checkout</button>
     </div>
   </section>

@@ -1,3 +1,39 @@
 .displayNone {
     display: none;
 }
+
+.containerCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home p {
+    margin: 10px 0px 0px;
+}
+
+.alamat {
+    width: 600px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+}
+
+.posisiUser {
+    display: block;
+
+}
+
+.btn-block {
+    width: 75vw !important;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* #cartCard {
+    padding-right: 0px;
+  } */
