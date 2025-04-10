@@ -1,3 +1,7 @@
+section {
+    padding: 50px;
+}
+
 .displayNone {
     display: none;
 }
@@ -32,8 +36,28 @@
     width: 75vw !important;
     margin: 20px auto;
     display: block;
-  }
+}
 
-  /* #cartCard {
-    padding-right: 0px;
-  } */
+.me-auto {
+    margin-right: 10px;
+}
+
+.card-container {
+    display: flex;
+    /* Menggunakan flexbox untuk layout */
+    flex-wrap: wrap;
+    /* Agar card bisa pindah baris jika layar kecil */
+    justify-content: space-evenly;
+    /* Menyebar card agar ada jarak merata antara card */
+    gap: 20px;
+    /* Menambahkan jarak antar card */
+    padding: 20px;
+    /* Memberikan padding di sekeliling container */
+}
+
+.card {
+    flex: 0 1 18rem;
+    /* Card memiliki ukuran tetap (18rem) dan tidak akan melar lebih besar */
+    box-sizing: border-box;
+    /* Agar padding dan margin tidak mengubah ukuran card */
+}

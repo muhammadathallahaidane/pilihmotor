@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="homePage.css">
+  <link rel="shortcut icon" href="pilihMotor logo.png" type="image/x-icon">
+  <title>pilihMotor</title>  
+  <style>
+    section{
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body background="asset\Untitleddesign.png">
+  <!-- login page -->
+  <section id="#intro">
+    <div class="container-lg mt-5">
+      <!-- <div>
+        <img style="width: 100px; margin-left: 110px;"  src="asset\logo.png" alt="">
+      </div> -->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 mt-5 text-md-start">
+          <img class="w-25 mb-3"  src="asset\logo.png" alt="">
+          <p class="display-4 fw-bold">Welcome to PilihMotor!</p>
+          <p class="h5 text-muted">At PilihMotor, we specialize in offering top-condition preloved motorbikes that are road-ready and wallet-friendly.</p>
+          <button type="button" class="btn btn-primary mt-2 shadow-lg" data-bs-toggle="modal" data-bs-target="#RegForm">Find your perfect ride now!</button>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <!-- <img class="img-fluid rounded border-5" width="400px" src="asset\logo.png"> -->
+          <!-- <img class="img-fluid rounded border-5 shadow-md" src="https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2024/05/29/harga-yamaha-xsr-155jpg-20240529035144.jpg"> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- modal login form -->
+    <!-- <div class="modal fade" id="ModalForm" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-light">
+              <h3 class="text-center">login</h3> -->
+              <!-- form login -->
+              <!-- <form>
+                <div class="mb-3 mt-4">
+                  <label for="inputUsername">Username</label>
+                  <input type="text" class="form-control rounded border-5" id="inputUsername" required>
+                </div> -->
+                <!-- input password -->
+                <!-- <div class="mb-3">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" class="form-control rounded border-5" id="inputPassword" required>
+                </div>
+                <div class="form-input">
+                  <button class="btn btn-primary mt-3 rounded border-5" style="width: 100%;" onclick="verification()">Login</button>
+                </div> -->
+                <!-- create account -->
+                <!-- <div class="text-center">
+                  <p class="mt-2" data-bs-toggle="modal" data-bs-target="#RegForm" style="font-size: 12px;"><a href="#"><strong>Sign Up</strong></a></p> -->
+                  <!-- modal form create account -->
+                <!-- </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- modal register account -->
+    <div class="modal fade" id="RegForm" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="myform bg-light">
+              <h3 class="text-center">Sign Up</h3>
+              <!-- form login -->
+              <form onsubmit="handleSubmit(event)">
+                <!-- input userName -->
+                <div class="mb-3 mt-4">
+                  <label for="inputUsernameReg">Username</label>
+                  <input type="text" class="form-control rounded border-5" id="inputUsernameReg" required>
+                </div>
+                <div class="mb-3 mt-4">
+                  <label for="inputEmailReg">Email</label>
+                  <input type="email" class="form-control rounded border-5" id="inputEmailReg" required>
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" class="form-control rounded border-5" id="inputPasswordReg" required>
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword">Confirm Password</label>
+                  <input type="password" class="form-control rounded border-5" id="confirmPasswordReg" required>
+                </div>
+                <div class="form-input">
+                  <button onclick="handleRegister()" class="btn btn-primary mt-3 rounded border-5" style="width: 100%;">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scriptAll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
