@@ -1,3 +1,6 @@
+body.background {
+  width: 100%;
+}
 .modal-content {
   width: 80%;
   margin: 0 auto;
@@ -21,12 +24,7 @@
   box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
   border-radius: 10px;
 }
-@media (max-width: 576px) {
-  .myform {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
+
 .form-control {
   color: #000000;
   padding-left: 0;
