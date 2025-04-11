@@ -157,7 +157,7 @@ function dataContent() {
             <img src="${databaseProduct[i].img}" class="card-img-top" alt=${databaseProduct[i]}>
               <div class="card-body">
               <h5 class="card-title">${databaseProduct[i].productName}</h5>
-              <h5>${databaseProduct[i].productPrice}</h6>
+              <h5> Rp ${databaseProduct[i].productPrice}</h6>
               <p class="card-text">${databaseProduct[i].productDesc}</p>
               <a href="#" class="btn btn-primary" onclick="addToCart(${databaseProduct[i].id})">Buy Now</a>
               </div>
