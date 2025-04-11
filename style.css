@@ -1,0 +1,63 @@
+section {
+    padding: 50px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.containerCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home p {
+    margin: 10px 0px 0px;
+}
+
+.alamat {
+    width: 600px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+}
+
+.posisiUser {
+    display: block;
+
+}
+
+.btn-block {
+    width: 75vw !important;
+    margin: 20px auto;
+    display: block;
+}
+
+.me-auto {
+    margin-right: 10px;
+}
+
+.card-container {
+    display: flex;
+    /* Menggunakan flexbox untuk layout */
+    flex-wrap: wrap;
+    /* Agar card bisa pindah baris jika layar kecil */
+    justify-content: space-evenly;
+    /* Menyebar card agar ada jarak merata antara card */
+    gap: 20px;
+    /* Menambahkan jarak antar card */
+    padding: 20px;
+    /* Memberikan padding di sekeliling container */
+}
+
+.card {
+    flex: 0 1 18rem;
+    /* Card memiliki ukuran tetap (18rem) dan tidak akan melar lebih besar */
+    box-sizing: border-box;
+    /* Agar padding dan margin tidak mengubah ukuran card */
+}
